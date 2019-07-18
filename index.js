@@ -1,9 +1,21 @@
-'use strict';
+"use strict";
+let is = module.exports;
 
-module.exports = (input, {postfix = 'rainbows'} = {}) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
-	}
-
-	return `${input} & ${postfix}`;
+is.isString = unknown => {
+	return typeof unknown === "string" ? true : false;
+};
+is.isFunction = unknown => {
+	return typeof unknown === "function" ? true : false;
+};
+is.isBoolean = unknown => {
+	return typeof unknown === "boolean" ? true : false;
+};
+is.isNumber = unknown => {
+	return typeof unknown === "number" ? true : false;
+};
+is.isObject = unknown => {
+	return typeof unknown === "object" ? true : false;
+};
+is.isUndefined = unknown => {
+	return typeof unknown === "undefined" ? true : false;
 };
