@@ -19,3 +19,6 @@ is.isObject = unknown => {
 is.isUndefined = unknown => {
 	return typeof unknown === "undefined" ? true : false;
 };
+is.isArray = unknown => {
+	return Array.isArray(unknown) ? true : false;
+};

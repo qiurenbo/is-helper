@@ -28,3 +28,9 @@ test("isUndefined", () => {
 	expect(is.isUndefined("hello world")).toEqual(false);
 	expect(is.isUndefined(undefined)).toEqual(true);
 });
+
+test("isArray", () => {
+	expect(is.isArray(123)).toEqual(false);
+	expect(is.isArray("hello world")).toEqual(false);
+	expect(is.isArray([1, 2, 3, 5])).toEqual(true);
+});

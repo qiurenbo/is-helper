@@ -24,6 +24,8 @@ is.isObject({}); // => true
 is.isObject(null); // => true
 
 is.isUndefined(undefined); // => true
+
+is.isArray([1, 2, 3, 4, 5]); // => true
 ```
 
 ## API
